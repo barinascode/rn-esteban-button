@@ -1,3 +1,3 @@
-import Section from './Components/index';
+import Button from './Components/index';
 
-export { Section }
+export { Button }
