@@ -4,14 +4,24 @@ import Theme from '../../../assets/styles'
 
 function index(props){
     
-    const { primaryColor, positiveColor, negativeColor, darkText, disabledColor, primaryTextColor, disabledBgColor } = Theme
+    const { primaryColor, positiveColor, negativeColor, disabledColor} = Theme
     const { w1, w2, w3, w4, w45, w5, w6, w7, w8, w9, w10 } = props
     const { r3, r6, r9, r12, r15, r18, r21, r24, r27,r30 } = props
     const { mb10, mb20, mb30, mb40, mb50, mb60, mb70, mb80, mb90, mb100 } = props
     const { h10, h20, h30, h40, h50, h60, h70, h80, h90, h100 } = props
-
+    const { flex1 } = props
+    const { jc } = props
 
     let buttonStyle = {}
+
+
+    if( flex1 ){
+      buttonStyle.flex = 1
+    }
+
+    if( jc ){
+      buttonStyle.justifyContent = 'center'
+    }
 
     if( w1 )
       buttonStyle.width = '10%'
